@@ -1,0 +1,1210 @@
+.Desable {
+    opacity: .7;
+    pointer-events: none;
+}
+
+
+/*............................ Students management: start ............................*/
+
+
+#StudentsManagement-content {
+    grid-column: span 12;
+    background-color: rgb(242 246 249);
+    overflow-x: hidden;
+}
+
+#StudentsManagement-content > h1 {
+    position: relative;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(255 255 255);
+    border-bottom: 1px solid rgb(226 232 240);
+}
+
+#StudentsInformation, #ParentInformation, #InsertStudent {
+    width: 90%;
+    margin: 15px auto;
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(226 232 240);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#StudentsInformation h2, #ParentInformation h2, #InsertStudent h2 {
+    text-align: center;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    margin-bottom: 30px;
+}
+
+#StudentsInformation > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#StudentsInformation > div > div:not(:last-of-type) {
+    width: 30%;
+}
+
+#StudentsInformation > div > div:not(:last-of-type) select, 
+#InsertStudent form select, #UpdateStudentData > form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 5px;
+    border: 1px solid rgb(226 232 240);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    cursor: pointer;
+    color: rgb(30 41 59);
+    position: relative;
+}
+
+#StudentsInformation > div > div:last-of-type, #ParentInformation > div > div:last-of-type {
+    max-height: 400px;
+    margin-top: 25px;
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+}
+
+#StudentsInformation > div > div:last-of-type table, #ParentInformation > div > div:last-of-type table {
+    font-family: 'JosefinSans-Regular';
+    width: 100%;
+    text-align: center;
+    color: rgb(30 41 59);
+    border-collapse: collapse;
+    text-wrap: nowrap;
+}
+
+#StudentsInformation > div > div:last-of-type table tr,
+#ParentInformation > div > div:last-of-type table tr {
+    border-bottom: 2px solid rgb(226 232 240);
+}
+
+#StudentsInformation > div > div:last-of-type table th, 
+#StudentsInformation > div > div:last-of-type table td,
+#ParentInformation > div > div:last-of-type table th,
+#ParentInformation > div > div:last-of-type table td {
+    padding: 10px;
+}
+
+.ModifyColumn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ModifyColumn a:first-of-type {
+    color: rgb(186, 33, 33);
+}
+
+.ModifyColumn svg {
+    margin-left: 5px;
+}
+
+#ParentInformation #parentSearching input {
+    width: 400px;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: 'JosefinSans-Regular';
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#ParentInformation #parentSearching button, 
+#InsertStudent form > div:last-of-type button {
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: 'JosefinSans-Medium';
+    border: none;
+    background-color: rgb(33, 119, 249);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-left: 20px;
+}
+
+#InsertStudent form > div:last-of-type button:active,
+#ParentInformation #parentSearching button:active {
+    background-color: rgb(66, 141, 254);
+}
+
+#InsertStudent {
+    width: 70%;
+}
+
+#InsertStudent form {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-evenly;
+}
+
+#InsertStudent form > div {
+    margin-bottom: 10px;
+}
+
+#InsertStudent form > div:first-of-type, #InsertStudent form > div:last-of-type {
+    grid-column: span 2;
+}
+
+#InsertStudent form input:not([type="file"]),
+#UpdateParentData > form input, 
+#UpdateStudentData > form input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'JosefinSans-Regular';
+}
+
+#InsertStudent form select, #UpdateStudentData > form select {
+    padding: 10px;
+}
+
+#InsertStudent form > div:nth-child(8) > div, 
+#UpdateStudentData > form div:nth-child(8) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    background: #f26767;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    color: white;
+    font-family: 'JosefinSans-Regular';
+    cursor: pointer;
+}
+
+#InsertStudent form > div:nth-child(8) > div svg,
+#UpdateStudentData > form div:nth-child(8) > div svg {
+    margin-left: 7px;
+}
+
+#InsertStudent form > div:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+#InsertStudent form > div:last-of-type button {
+    width: 70%;
+}
+
+.seeImage {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.seeImage:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+#UpdateParentData, #UpdateStudentData {
+    width: 650px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.443);
+    z-index: 10;
+}
+
+#UpdateStudentData { height: 450px; }
+
+#UpdateParentData > div:first-of-type, #UpdateStudentData div:first-of-type {
+    display: flex;
+    justify-content: end;
+}
+
+#UpdateParentData > div:first-of-type svg, #UpdateStudentData > div:first-of-type svg {
+    font-size: 1.5rem;
+    opacity: .7;
+    cursor: pointer;
+}
+
+#UpdateParentData > div:first-of-type svg:hover, #UpdateStudentData > div:first-of-type svg:hover {
+    opacity: 1;
+}
+
+#UpdateParentData > form, #UpdateStudentData > form {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+#UpdateStudentData > form { margin-top: 40px; }
+
+#UpdateParentData > form > div:not(:last-of-type),
+#UpdateStudentData > form > div:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+#UpdateParentData > form > div:nth-child(3),
+#UpdateParentData > form > div:nth-child(5),
+#UpdateStudentData > form > div:nth-child(3),
+#UpdateStudentData > form > div:nth-child(5),
+#UpdateStudentData > form > div:nth-child(7),
+#UpdateStudentData > form > div:nth-child(9) {
+    padding-left: 10px;
+}
+
+#UpdateParentData > form > div:nth-child(2),
+#UpdateParentData > form > div:nth-child(4),
+#UpdateStudentData > form > div:nth-child(2),
+#UpdateStudentData > form > div:nth-child(4),
+#UpdateStudentData > form > div:nth-child(6)
+ {
+    padding-right: 10px;
+}
+
+#UpdateParentData > form > div:first-of-type,
+#UpdateParentData > form > div:last-of-type,
+#UpdateStudentData > form > div:first-of-type,
+#UpdateStudentData > form > div:last-of-type {
+    grid-column: span 2;
+}
+
+#UpdateParentData > form > div:last-of-type button,
+#UpdateStudentData > form > div:last-of-type button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(70, 243, 68);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    color: white;
+    cursor: pointer;
+}
+
+#UpdateParentData > form > div:last-of-type button:active,
+#UpdateStudentData > form > div:last-of-type button:active {
+    background-color: rgb(118, 247, 116);
+}
+
+#UpdateParentData > form > div:last-of-type button svg,
+#UpdateStudentData > form > div:last-of-type button svg {
+    margin-left: 5px;
+}
+
+/*............................ Students management: end ............................*/
+
+/*............................ Groups management: start ............................*/
+
+#GroupsManagement-content {
+    grid-column: span 12;
+    background-color: rgb(242 246 249);
+    overflow-x: hidden;
+}
+
+#GroupsManagement-content > h1 {
+    position: relative;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(255 255 255);
+    border-bottom: 1px solid rgb(226 232 240);
+}
+
+#AllInstitutGroups, #AddGroup {
+    width: 90%;
+    margin: 15px auto;
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(226 232 240);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#AddGroup {
+    width: 70%;
+}
+
+#AllInstitutGroups h2, #AddGroup h2 {
+    text-align: center;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    margin-bottom: 30px;
+}
+
+#AllInstitutGroups > div:last-of-type {
+    max-height: 300px;
+    margin-top: 25px;
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+}
+
+#AllInstitutGroups > div:last-of-type table {
+    font-family: 'JosefinSans-Regular';
+    min-width: 100%;
+    text-align: center;
+    color: rgb(30 41 59);
+    border-collapse: collapse;
+    text-wrap: nowrap;
+}
+
+#AllInstitutGroups > div:last-of-type table tr {
+    border-bottom: 2px solid rgb(226 232 240);
+}
+
+#AllInstitutGroups > div:last-of-type table th, 
+#AllInstitutGroups > div:last-of-type table td {
+    padding: 10px;
+}
+
+.ModifyColumn {
+    justify-content: center;
+}
+
+.ModifyColumn > a {
+    margin: 0 15px;
+}
+
+#AddGroup form {
+    /* display: grid;
+    grid-template-columns: repeat(2, 45%); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#AddGroup form > div:not(:last-of-type) {
+    width: calc(85% / 2);
+    margin-bottom: 10px;
+}
+
+#AddGroup > form input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'JosefinSans-Regular';
+}
+
+#AddGroup form > div:last-of-type {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#addbtn-GM, #addbtn-SM {
+    width: 70%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: 'JosefinSans-Medium';
+    border: none;
+    background-color: rgb(33, 119, 249);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#addbtn-GM:active, #addbtn-SM:active {
+    background-color: rgb(66, 141, 254);
+}
+
+#updatebtn {
+    width: 70%;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(70, 243, 68);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    color: white;
+    cursor: pointer;
+    margin: 10px 0px 0 0;
+}
+
+#updatebtn svg {
+    margin-left: 5px;
+}
+
+/*............................ Groups management: end ............................*/
+
+/*............................ Specialities management: start ............................*/
+
+#SpecialitiesManagemnt-content {
+    grid-column: span 12;
+    background-color: rgb(242 246 249);
+    overflow-x: hidden;
+}
+
+#SpecialitiesManagemnt-content > h1 {
+    position: relative;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(255 255 255);
+    border-bottom: 1px solid rgb(226 232 240);
+}
+
+#SpecialitiesInfo, #AddSpeciality {
+    width: 90%;
+    margin: 15px auto;
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(226 232 240);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#AddSpeciality { width: 70%; }
+
+#SpecialitiesInfo h2, #AddSpeciality h2 {
+    text-align: center;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    margin-bottom: 30px;
+}
+
+#SpecialitiesInfo > div:last-of-type {
+    max-height: 300px;
+    margin-top: 25px;
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+}
+
+#SpecialitiesInfo > div:last-of-type table {
+    font-family: 'JosefinSans-Regular';
+    min-width: 100%;
+    text-align: center;
+    color: rgb(30 41 59);
+    border-collapse: collapse;
+    text-wrap: nowrap;
+}
+
+#SpecialitiesInfo > div:last-of-type table tr {
+    border-bottom: 2px solid rgb(226 232 240);
+}
+
+#SpecialitiesInfo > div:last-of-type table th, #SpecialitiesInfo > div:last-of-type table td {
+    padding: 10px;
+}
+
+#AddSpeciality form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#AddSpeciality form > div:first-of-type {
+    width: 60%;
+}
+
+#AddSpeciality form > div:last-of-type {
+    width: 30%;
+}
+
+#AddSpeciality > form input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'JosefinSans-Regular';
+}
+
+#addbtn-SP, #updatebtn {
+    /* width: 100%; */
+    margin: 0;
+}
+
+/*............................ Specialities management: end ............................*/
+
+/*............................ Payments management: start ............................*/
+
+#PaymentManagemnt-content {
+    grid-column: span 12;
+    background-color: rgb(242 246 249);
+    overflow-x: hidden;
+}
+
+#PaymentManagemnt-content > h1 {
+    position: relative;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(255 255 255);
+    border-bottom: 1px solid rgb(226 232 240);
+}
+
+#PaymentManagemnt-content > h2 {
+    font-size: 1.5rem;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    text-align: center;
+    padding-top: 20px;
+}
+
+#PaymentInfo {
+    width: 90%;
+    margin: 15px auto;
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(226 232 240);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#PaymentInfo h2 {
+    text-align: center;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    margin-bottom: 30px;
+}
+
+#PaymentInfo > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#PaymentInfo > div > div:not(:last-of-type) {
+    width: 30%;
+}
+
+#PaymentInfo > div > div:not(:last-of-type) select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 5px;
+    border: 1px solid rgb(226 232 240);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    cursor: pointer;
+    color: rgb(30 41 59);
+    position: relative;
+}
+
+#PaymentInfo > div > div:last-of-type {
+    max-height: 380px;
+    margin-top: 25px;
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+}
+
+#PaymentInfo > div > div:last-of-type table {
+    font-family: 'JosefinSans-Regular';
+    min-width: 100%;
+    text-align: center;
+    color: rgb(30 41 59);
+    border-collapse: collapse;
+    text-wrap: nowrap;
+    position: relative;
+}
+
+#PaymentInfo > div > div:last-of-type table tr {
+    border-bottom: 2px solid rgb(226 232 240);
+}
+
+#PaymentInfo > div > div:last-of-type table thead tr {
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+#PaymentInfo > div > div:last-of-type table th, #PaymentInfo > div > div:last-of-type table td {
+    padding: 10px;
+}
+
+#PaymentInfo > div > div:last-of-type table td:not(:first-of-type) { cursor: pointer; }
+
+.payed {
+    background-color: rgba(71, 243, 68, 0.747);
+}
+
+/*............................ Payments management: end ............................*/
+
+/*............................ Absences management: start ............................*/
+
+#AbcenseManagemnt-content {
+    grid-column: span 12;
+    background-color: rgb(242 246 249);
+    overflow-x: hidden;
+}
+
+#AbcenseManagemnt-content > h1 {
+    position: relative;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(255 255 255);
+    border-bottom: 1px solid rgb(226 232 240);
+}
+
+#AbsencesInfo {
+    width: 90%;
+    margin: 15px auto;
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(226 232 240);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#AbsencesInfo h2 {
+    text-align: center;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    margin-bottom: 30px;
+}
+
+#AbsencesInfo > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#AbsencesInfo > div > div:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+#AbsencesInfo > div > div:first-of-type {
+    width: 40%;
+}
+
+#AbsencesInfo > div > div:nth-child(2), #AbsencesInfo > div > div:nth-child(3) {
+    width: 20%;
+}
+
+#AbsencesInfo > div > div:nth-child(3) select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding: 5px;
+    border: 1px solid rgb(226 232 240);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    cursor: pointer;
+    color: rgb(30 41 59);
+    position: relative;
+}
+
+#AbsencesInfo > div > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#AbsencesInfo > div > div:last-of-type {
+    max-height: 400px;
+    overflow-x: hidden;
+}
+
+#AbsencesInfo > div > div:nth-child(4), #AbsencesInfo > div > div:last-of-type {
+    width: 100%;
+}
+
+#AbsencesInfo input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+}
+
+#AbsencesInfo button {
+    width: 70%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: 'JosefinSans-Medium';
+    border: none;
+    background-color: rgb(33, 119, 249);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 10px 0px 0 0;
+}
+
+#AbsencesInfo > div > div:last-of-type table {
+    font-family: 'JosefinSans-Regular';
+    min-width: 100%;
+    text-align: center;
+    color: rgb(30 41 59);
+    border-collapse: collapse;
+    text-wrap: nowrap;
+    margin-top: 15px;
+}
+
+table
+
+#AbsencesInfo > div > div:last-of-type table thead tr {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+#AbsencesInfo > div > div:last-of-type table tr {
+    border-bottom: 2px solid rgb(226 232 240);
+}
+
+#AbsencesInfo > div > div:last-of-type table td:not(:first-of-type) {
+    cursor: pointer;
+}
+
+#AbsencesInfo > div > div:last-of-type table th,
+#AbsencesInfo > div > div:last-of-type table td {
+    padding: 10px;
+}
+
+#TargetAbsences {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-family: 'JosefinSans-Bold';
+}
+
+.absence {
+    background-color: rgba(243, 109, 68, 0.747);
+}
+
+/*............................ Absences management: end ............................*/
+
+/*............................ Modules management: start ............................*/
+
+#ModulesManagement-content {
+    grid-column: span 12;
+    background-color: rgb(242 246 249);
+    overflow-x: hidden;
+}
+
+#ModulesManagement-content > h1 {
+    position: relative;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(255 255 255);
+    border-bottom: 1px solid rgb(226 232 240);
+}
+
+#ModulesInfo, #AddModule {
+    width: 90%;
+    margin: 15px auto;
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(226 232 240);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#AddModule {
+    width: 70%;
+}
+
+#ModulesInfo h2, #AddModule h2 {
+    text-align: center;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    margin-bottom: 30px;
+}
+
+#ModulesInfo > div {
+    margin-top: 25px;
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+}
+
+#ModulesInfo > div > div:first-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+#ModulesInfo > div select, 
+#AddModule form > div:first-of-type select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 40%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid rgb(226 232 240);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    cursor: pointer;
+    color: rgb(30 41 59);
+    position: relative;
+}
+
+#ModulesInfo > div > div:last-of-type {
+    margin-top: 10px;
+    max-height: 210px;
+}
+
+#ModulesInfo > div > div:last-of-type table {
+    font-family: 'JosefinSans-Regular';
+    min-width: 100%;
+    text-align: center;
+    color: rgb(30 41 59);
+    border-collapse: collapse;
+    text-wrap: nowrap;
+}
+
+#ModulesInfo > div > div:last-of-type table tr {
+    border-bottom: 2px solid rgb(226 232 240);
+}
+
+#ModulesInfo > div > div:last-of-type table th, 
+#ModulesInfo > div > div:last-of-type table td {
+    padding: 10px;
+}
+
+#AddModule form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#AddModule form > div:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+#AddModule form > div:first-of-type,
+#AddModule form > div:last-of-type {
+    width: 100%;
+}
+
+#AddModule form > div:nth-child(2),
+#AddModule form > div:nth-child(3) {
+    width: calc(95% / 2);
+}
+
+#AddModule form > div:nth-child(2) {
+    margin-right: 2.5%;
+}
+
+#AddModule form > div:nth-child(3) {
+    margin-left: 2.5%;
+}
+
+#AddModule form > div:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+#AddModule form > div:first-of-type select {
+    width: 100%;
+}
+
+#AddModule > form input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'JosefinSans-Regular';
+}
+
+#AddModule form > div:last-of-type button {
+    width: 70%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: 'JosefinSans-Medium';
+    border: none;
+    background-color: rgb(33, 119, 249);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#updatebtn {
+    background-color: rgb(70, 243, 68) !important;
+}
+
+/*............................ Modules management: end ............................*/
+
+/*............................ Exams management: start ............................*/
+
+#ExamsManagement-content {
+    grid-column: span 12;
+    background-color: rgb(242 246 249);
+    overflow-x: hidden;
+}
+
+#ExamsManagement-content > h1 {
+    position: relative;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(255 255 255);
+    border-bottom: 1px solid rgb(226 232 240);
+}
+
+#ExamsInfo, #ResultsInfo, #AddExam, #CalcRedults {
+    width: 90%;
+    margin: 15px auto;
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(226 232 240);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#ExamsInfo h2, #ResultsInfo h2, #AddExam h2, #CalcRedults h2 {
+    text-align: center;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    margin-bottom: 30px;
+}
+
+#ExamsInfo > div form, #ResultsInfo > div form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#ExamsInfo > div form > div:first-of-type,
+#ResultsInfo > div form > div:first-of-type {
+    width: 40%;
+}
+
+#ExamsInfo > div form > div:nth-child(2),
+#ExamsInfo > div form > div:nth-child(3),
+#ResultsInfo > div form > div:nth-child(2),
+#ResultsInfo > div form > div:nth-child(3) {
+    width: 25%;
+}
+
+#ExamsInfo > div form > div:last-of-type,
+#ResultsInfo > div form > div:last-of-type {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#ExamsInfo > div form input,
+#ResultsInfo > div form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: 'JosefinSans-Regular';
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#ExamsInfo > div form select,
+#ResultsInfo > div form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid rgb(226 232 240);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    cursor: pointer;
+    color: rgb(30 41 59);
+    position: relative;
+}
+
+#ExamsInfo > div form > div:last-of-type button,
+#ResultsInfo > div form > div:last-of-type button {
+    width: 70%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: 'JosefinSans-Medium';
+    border: none;
+    background-color: rgb(33, 119, 249);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 15px 0px 0 0;
+}
+
+#ExamsInfo > div form > div:last-of-type button:active,
+#ResultsInfo > div form > div:last-of-type button:active,
+#AddExam > form > div:last-of-type button:active,
+#CalcRedults form > div:last-of-type button:active {
+    background-color: rgb(66, 141, 254);
+}
+
+#ExamsInfo > div > div, #ResultsInfo > div > div {
+    max-height: 300px;
+}
+
+#ExamsInfo > div:last-of-type table {
+    font-family: 'JosefinSans-Regular';
+    min-width: 100%;
+    text-align: center;
+    color: rgb(30 41 59);
+    border-collapse: collapse;
+    text-wrap: nowrap;
+    margin-top: 15px;
+}
+
+#ExamsInfo > div:last-of-type table tr {
+    border-bottom: 2px solid rgb(226 232 240);
+}
+
+#ExamsInfo > div:last-of-type table th, 
+#ExamsInfo > div:last-of-type table td {
+    padding: 10px;
+}
+
+#DeleteNoteContainer {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+#note {
+    font-size: 1.2rem;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+}
+
+#DeleteNote {
+    cursor: pointer;
+    color: rgb(186, 33, 33);
+    font-size: 1.1rem;
+    font-family: 'JosefinSans-Medium';
+    position: absolute;
+    right: 0;
+}
+
+#DeleteNote svg { margin-left: 5px; }
+
+#AddExam > form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#AddExam > form > div {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+#AddExam > form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    cursor: pointer;
+    color: rgb(30, 41, 59);
+    position: relative;
+}
+
+#AddExam > form > div:last-of-type button {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: 'JosefinSans-Medium';
+    border: none;
+    background-color: rgb(33, 119, 249);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 15px 0;
+}
+
+#AddExam > form input,
+#AddExam > form select,
+#CalcRedults form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: 'JosefinSans-Regular';
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#CalcRedults form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#CalcRedults form > div {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+#CalcRedults form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    cursor: pointer;
+    color: rgb(30, 41, 59);
+    position: relative;
+}
+
+#CalcRedults form > div:last-of-type button {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: 'JosefinSans-Medium';
+    border: none;
+    background-color: rgb(33, 119, 249);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 15px 0;
+}
+
+.StudentExamNote {
+    cursor: pointer;
+}
+
+.SelectedNote {
+    background-color: #d6d5d5;
+}
+
+/*............................ Exams management: end ............................*/
+
+.updateBTN {
+    color: rgb(71, 250, 30);
+}

@@ -1,0 +1,389 @@
+@media (max-width: 330px) {
+    #layout > ul li {
+        padding: 5px 15px;
+        font-size: .9rem;
+    }
+
+    #layout > div svg {
+        display: block !important;
+        flex-shrink: 0;
+        font-size: 1.1rem;
+        fill: rgb(148 163 184);
+        cursor: pointer;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 330px) and (max-width: 550px){
+    #layout > ul li {
+        padding: 5px 20px;
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 550px) {
+    #layout > ul li {
+        font-size: 1rem;
+    }
+
+    #StudentInfo-content > div:last-of-type input {
+        width: 300px !important;
+    }
+}
+
+@media (max-width: 750px) {
+    #StudentInfo-content > div:last-of-type {
+        margin-top: 60px;
+    }
+
+    .other1 {
+        left: 10px;
+    }
+
+    #AbsencesInfo > div > div:last-of-type table {
+        margin-top: 20px;
+        width: 730px;
+    }
+
+    #AbsencesInfo > div > div:last-of-type,
+    #ExamsInfo > div > div {
+        overflow: auto;
+        margin-top: 12px;
+    }
+
+    #StudentAbsences-content > div:first-of-type > div p {
+        font-size: .8rem;
+    }
+
+    #StudentProfile {
+        width: 30px;
+        height: 30px;
+    }
+
+    #AbsencesInfo,
+    #StudentsResultsInfo, 
+    #StudentExamsInfo {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #AbsencesInfo form > div:first-of-type, 
+    #AbsencesInfo form > div:nth-child(2),
+    #StudentsResultsInfo form > div:first-of-type, 
+    #StudentsResultsInfo form > div:nth-child(2), 
+    #StudentExamsInfo form > div:first-of-type, 
+    #StudentExamsInfo form > div:nth-child(2) {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #StudentsResultsInfo form > div:first-of-type,
+    #StudentExamsInfo form > div:first-of-type {
+        margin-bottom: 10px;
+    }
+
+    #AbsencesInfo input {
+        max-width: 400px;
+        font-size: 1rem;
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+
+    #AbsencesInfo form > div:nth-child(2) select {
+        max-width: 400px;
+    }
+
+    #AbsencesInfo form > div:last-of-type {
+        max-width: 350px;
+    }
+
+    #AbsencesInfo button,
+    #ExamsInfo > div form > div:last-of-type button, 
+    #ResultsInfo > div form > div:last-of-type button,
+    #AddExam > form > div:last-of-type button,
+    #CalcRedults form > div:last-of-type button,
+    #StudentsResultsInfo button, #StudentExamsInfo button {
+        margin: 5px 0px 0 0;
+        font-size: .8rem;
+        padding: 7px;
+    }
+
+    #exams, #StudentsResultsInfo > div:last-child {
+        margin-top: 10px;
+    }
+
+    #StudentAbsences-content, #StudentExams-content {
+        grid-column: span 15;
+    }
+
+    #LogoContainer {
+        display: block !important;
+    }
+
+    .ShowMenu {
+        display: block;
+        position: absolute;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #_container > div:last-child {
+        display: none;
+    }
+
+    #_container > div:first-child {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #_container > div:first-child > form {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    #_container > div:first-child > form > div:nth-child(2){
+        margin-top: 15px;
+    }
+
+
+    #container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #layout {
+        max-width: 600px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        left: -100%;
+        transition: .2s ease-in;
+        padding: 15px;
+    }
+
+    #StudentInfo-content {
+        grid-column: span 15;
+        padding: 15px;
+    }
+
+    #profile {
+        width: 150px;
+        height: 150px;
+    }
+
+    #StudentInfo-content > div:first-of-type p {
+        font-size: 1.5rem;
+        margin-top: 5px;
+    }
+
+    #StudentInfo-content > div:last-of-type input {
+        width: 90%;
+        font-size: 1rem;
+        padding: 7px;
+        margin-bottom: 15px;
+    }
+
+    #StudentInfo-content > div:last-of-type input:nth-child(odd) {
+        margin-right: 0px;
+    }
+
+    #StudentInfo-content > div:last-of-type input:nth-child(even) {
+        margin-left: 0px;
+    }
+
+    #layout > div {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #layout > div img {
+        max-width: 350px;
+        width: 80%;
+    }
+
+    #layout > div svg {
+        display: block !important;
+        flex-shrink: 0;
+        font-size: 1.1rem;
+        fill: rgb(148 163 184);
+        cursor: pointer;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+
+    #layout > div svg:hover {
+        fill: white;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 1000px) {
+    .other1 {
+        left: 10px;
+    }
+
+    #StudentInfo-content > div:first-of-type p {
+        font-size: 2.2rem;
+        margin-top: 15px;
+    }
+
+    #profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    #layout > div svg {
+        display: block !important;
+        flex-shrink: 0;
+        font-size: 1.2rem;
+        fill: rgb(148 163 184);
+        cursor: pointer;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+
+    #layout > div {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #layout > div img {
+        max-width: 350px;
+        width: 80%;
+    }
+
+    #StudentInfo-content > div:last-of-type {
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+
+    #StudentInfo-content > div:last-of-type input {
+        width: calc(85% / 2);
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+    .other1 {
+        left: 10px;
+    }
+
+    #StudentAbsences-content, #StudentExams-content {
+        grid-column: span 15;
+    }
+
+    #StudentInfo-content > div:last-of-type input {
+        width: calc(85% / 2) !important;
+    }
+
+    #layout > div svg {
+        display: block !important;
+        flex-shrink: 0;
+        font-size: 1.3rem;
+        fill: rgb(148 163 184);
+        cursor: pointer;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+
+    #layout > div {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #layout > div img {
+        max-width: 350px;
+        width: 80%;
+    }
+
+    #_container > div:first-child {
+        width: 40%;
+        padding: 10px;
+    }
+
+    #_container > div:last-child {
+        width: 60%;
+    }
+
+    #_container > div:first-child > form {
+        width: 100%;
+    }
+
+    #_container > div:first-child > form > div:nth-child(2){
+        margin-top: 10px;
+    }
+
+    #layout {
+        max-width: 600px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        left: -100%;
+        transition: .5s ease-in;
+        padding: 15px;
+    }
+
+    #StudentInfo-content {
+        grid-column: span 15;
+        padding: 15px;
+    }
+
+    .ShowMenu {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    #layout {
+        grid-column: span 4;
+        left: 0;
+    }
+
+    #StudentInfo-content, #StudentAbsences-content, #StudentExams-content {
+        grid-column: span 11;
+    }
+
+    #StudentInfo-content > div:last-of-type input {
+        width: calc(90% / 2);
+    }
+}
+
+@media (min-width: 1650px) {
+    #layout {
+        grid-column: span 4;
+        left: 0;
+    }
+
+    #StudentAbsences-content, #StudentExams-content {
+        grid-column: span 11;
+    }
+
+    #_container > div:first-child > form {
+        width: 80%;
+    }
+
+    #StudentInfo-content {
+        grid-column: span 11;
+    }
+
+    #layout > div {
+        width: 400px;
+    }
+
+    #layout > ul li {
+        padding: 5px 20px;
+        font-size: 1.3rem;
+    }
+
+    #StudentInfo-content > div:last-of-type input {
+        width: calc(85% / 2);
+    }
+}

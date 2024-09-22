@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#_container {
+    height: 100vh;
+    display: flex;
+}
+
+#_container > div:first-child {
+    width: 35%;
+    padding: 20px;
+}
+
+#_container > div:first-child > form {
+    width: 335px;
+    flex-shrink: 0;
+}
+
+#_container > div:first-child > form input {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'JosefinSans-Regular';
+    margin-bottom: 15px;
+}
+
+#_container > div:first-child form > div button {
+    width: 100%;
+    padding: 7px;
+    font-size: 1.2rem;
+    font-family: 'JosefinSans-Medium';
+    border: none;
+    background-color: rgb(66, 141, 255);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#_container > div:last-child {
+    width: 65%;
+    background-color: rgb(45 65 99);
+}
+
+#_container > div:last-child img {
+    width: 90%;
+    opacity: .4;
+}
+
+#StudentInfo-content {
+    grid-column: span 12;
+    overflow-x: hidden;
+    padding: 30px;
+    position: relative;
+}
+
+#StudentInfo-content > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile {
+    width: 250px;
+    height: 250px;
+}
+
+#profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+#StudentInfo-content > div:first-of-type p {
+    font-family: 'JosefinSans-Bold';
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+#StudentInfo-content > div:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#StudentInfo-content > div:last-of-type input {
+    width: 400px;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'JosefinSans-Regular';
+    margin-bottom: 20px;
+    opacity: .7;
+}
+
+#StudentInfo-content > div:last-of-type input:nth-child(odd) {
+    margin-right: 20px;
+}
+
+#StudentInfo-content > div:last-of-type input:nth-child(even) {
+    margin-left: 20px;
+}
+
+#StudentAbsences-content, #StudentExams-content {
+    grid-column: span 12;
+    background-color: rgb(242 246 249);
+    overflow-x: hidden;
+}
+
+#StudentAbsences-content > div:first-of-type,
+#StudentExams-content > div:first-of-type {
+    position: relative;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: end;
+    background-color: rgb(255 255 255);
+    border-bottom: 1px solid rgb(226 232 240);
+}
+
+#StudentAbsences-content > div:first-of-type > div,
+#StudentExams-content > div:first-of-type > div {
+    display: flex;
+    align-items: center;
+}
+
+#StudentProfile {
+    width: 50px;
+    height: 50px;
+}
+
+#StudentProfile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+#StudentAbsences-content > div:first-of-type > div p,
+#StudentExams-content > div:first-of-type > div p {
+    margin-right: 10px;
+    font-size: 1rem;
+    font-family: 'JosefinSans-Bold';
+}
+
+#_Content {
+    display: block !important;
+}
+
+#AbsencesInfo form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#AbsencesInfo form > div:first-of-type,
+#AbsencesInfo form > div:nth-child(2) {
+    width: calc(80% / 2);
+}
+
+#AbsencesInfo form > div:nth-child(2) select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding: 5px;
+    border: 1px solid rgb(226 232 240);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    cursor: pointer;
+    color: rgb(30 41 59);
+    position: relative;
+}
+
+#AbsencesInfo form > div:last-of-type {
+    width: 90%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.toDefault {
+    cursor: default !important;
+}
+
+.ShowMenu {
+    display: none;
+}
+
+#StudentsResultsInfo, #StudentExamsInfo {
+    width: 90%;
+    margin: 15px auto;
+    background-color: rgb(255 255 255);
+    border: 1px solid rgb(226 232 240);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#StudentsResultsInfo h2, #StudentExamsInfo h2 {
+    text-align: center;
+    font-family: 'JosefinSans-Bold';
+    color: rgb(30 41 59);
+    margin-bottom: 30px;
+}
+
+#StudentsResultsInfo form, #StudentExamsInfo form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#StudentsResultsInfo form > div:first-of-type, 
+#StudentsResultsInfo form > div:nth-child(2),
+#StudentExamsInfo form > div:first-of-type, 
+#StudentExamsInfo form > div:nth-child(2) {
+    width: calc(80% / 2);
+}
+
+#StudentsResultsInfo form > div:last-of-type,
+#StudentExamsInfo form > div:last-of-type {
+    width: 90%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#StudentsResultsInfo form > div select,
+#StudentExamsInfo form > div select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid rgb(226 232 240);
+    border-radius: 5px;
+    font-family: 'JosefinSans-Medium';
+    cursor: pointer;
+    color: rgb(30 41 59);
+    position: relative;
+}
+
+#StudentsResultsInfo button,
+#StudentExamsInfo button {
+    width: 70%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: 'JosefinSans-Medium';
+    border: none;
+    background-color: rgb(33, 119, 249);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 10px 0px 0 0;
+}
+
+#exams {
+    max-height: 300px;
+}
+
+#exams table {
+    font-family: 'JosefinSans-Regular';
+    min-width: 100%;
+    text-align: center;
+    color: rgb(30 41 59);
+    border-collapse: collapse;
+    text-wrap: nowrap;
+    margin-top: 15px;
+}
+
+#exams table tr {
+    border-bottom: 2px solid rgb(226 232 240);
+}
+
+#exams table th, 
+#exams table td {
+    padding: 10px;
+}

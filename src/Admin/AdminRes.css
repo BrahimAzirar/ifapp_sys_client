@@ -1,0 +1,461 @@
+@media (max-width: 450px) {
+    #StudentImage {
+        width: 90%;
+        height: 300px;
+    }
+
+    #StudentsManagement-content, #GroupsManagement-content,
+    #SpecialitiesManagemnt-content, #PaymentManagemnt-content,
+    #AbcenseManagemnt-content, #ExamsManagement-content {
+        grid-column: span 15;
+    }
+
+    #StudentsManagement-content > h1, #GroupsManagement-content > h1,
+    #SpecialitiesManagemnt-content > h1, #PaymentManagemnt-content > h1,
+    #AbcenseManagemnt-content > h1, #ExamsManagement-content > h1 {
+        padding: 10px;
+        font-size: 1.4rem;
+    }
+
+    #StudentsInformation, #ParentInformation, #InsertStudent,
+    #AllInstitutGroups, #AddGroup,
+    #SpecialitiesInfo, #AddSpeciality,
+    #PaymentInfo, #AbsencesInfo,
+    #ExamsInfo, #ResultsInfo, #AddExam, #CalcRedults {
+        padding: 15px 10px;
+    }
+
+    #StudentsInformation h2, #ParentInformation h2, #InsertStudent h2,
+    #AllInstitutGroups h2, #AddGroup h2,
+    #SpecialitiesInfo h2, #AddSpeciality h2,
+    #PaymentInfo h2, #AbsencesInfo h2,
+    #ExamsInfo h2, #ResultsInfo h2, #AddExam h2, #CalcRedults h2,
+    #StudentsResultsInfo h2, #StudentExamsInfo h2 {
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+
+    #SpecialitiesInfo h2, #AddSpeciality h2 { font-size: 1rem; }
+
+    #StudentsInformation > div > div:not(:last-of-type),
+    #AddGroup form > div:not(:last-of-type),
+    #AddSpeciality form > div:first-of-type,
+    #PaymentInfo > div > div:not(:last-of-type),
+    #ExamsInfo > div form > div,
+    #ResultsInfo > div form > div,
+    #AddExam form > div,
+    #CalcRedults form > div {
+        width: 90% !important;
+        margin-bottom: 12px;
+    }
+
+    #AbsencesInfo > div > div:first-of-type,
+    #AbsencesInfo > div > div:nth-child(2), 
+    #AbsencesInfo > div > div:nth-child(3) {
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    #StudentsInformation > div > div:last-of-type, #ParentInformation > div > div:last-of-type {
+        max-height: 300px;
+        margin-top: 0px;
+    }
+
+    #StudentsInformation > div > div:not(:last-of-type) select,
+    #InsertStudent form select, #UpdateStudentData > form select,
+    #PaymentInfo > div > div:not(:last-of-type) select,
+    #AbsencesInfo > div > div:nth-child(3) select {
+        font-size: .9rem;
+        padding: 5px;
+    }
+
+    .no-data {
+        font-size: 1rem;
+        padding-top: 0px;
+    }
+
+    #parentSearching, #PaymentInfo > div, #AbsencesInfo > div {
+        flex-wrap: wrap;
+    }
+
+    #ParentInformation #parentSearching input {
+        width: 90%;
+        padding: 7px;
+        font-size: .9rem;
+        margin-bottom: 10px;
+    }
+
+    #ParentInformation #parentSearching button,
+    #InsertStudent form > div:last-of-type button,
+    #addbtn, #addbtn-GM, #addbtn-SM, #updatebtn {
+        padding: 7px;
+        font-size: .7rem;
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+
+    #addbtn-SM, #addbtn-GM { margin-top: 0; }
+
+    #InsertStudent, #AddGroup, #AddSpeciality {
+        width: 90%;
+    }
+
+    #InsertStudent form > div:not(:first-of-type),
+    #InsertStudent form > div:not(:last-of-type) {
+        grid-column: span 2;
+    }
+
+    #InsertStudent form input:not([type="file"]),
+    #UpdateParentData > form input,
+    #UpdateStudentData > form input,
+    #AddGroup > form input,
+    #AddSpeciality > form input {
+        width: 100%;
+        padding: 7px;
+        font-size: .9rem;
+    }
+
+    #InsertStudent form > div:nth-child(8) > div,
+    #UpdateStudentData > form div:nth-child(8) > div {
+        width: 100%;
+        font-size: 1rem;
+        padding: 7px 0;
+    }
+
+    #StudentsInformation > div > div:last-of-type table, #ParentInformation > div > div:last-of-type table,
+    #AllInstitutGroups > div:last-of-type table,
+    #SpecialitiesInfo > div:last-of-type table,
+    #PaymentInfo > div > div:last-of-type table,
+    #AbsencesInfo > div > div:last-of-type table {
+        font-size: .7rem;
+    }
+
+    #PaymentInfo > div > div:last-of-type table th, 
+    #PaymentInfo > div > div:last-of-type table td,
+    #AbsencesInfo > div > div:last-of-type table th, 
+    #AbsencesInfo > div > div:last-of-type table td {
+        padding: 5px;
+    }
+
+    #UpdateParentData, #UpdateStudentData {
+        width: 90%;
+        max-width: 650px;
+        padding: 15px;
+    }
+
+    #UpdateParentData > div:first-of-type svg, #UpdateStudentData > div:first-of-type svg {
+        font-size: 1.2rem;
+    }
+
+    #UpdateStudentData > form, #PaymentInfo > div > div:last-of-type {
+        margin-top: 10px;
+    }
+
+    #UpdateParentData > form > div:not(:last-of-type),
+    #UpdateStudentData > form > div:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+
+    #UpdateParentData > form > div:not(:first-of-type),
+    #UpdateParentData > form > div:not(:last-of-type),
+    #UpdateStudentData > form > div:not(:first-of-type),
+    #UpdateStudentData > form > div:not(:last-of-type) {
+        grid-column: span 2;
+    }
+
+    #UpdateParentData > form > div:nth-child(2),
+    #UpdateParentData > form > div:nth-child(4),
+    #UpdateStudentData > form > div:nth-child(2), 
+    #UpdateStudentData > form > div:nth-child(4), 
+    #UpdateStudentData > form > div:nth-child(6) {
+        padding-right: 0px;
+    }
+
+    #UpdateParentData > form > div:nth-child(3),
+    #UpdateParentData > form > div:nth-child(5),
+    #UpdateStudentData > form > div:nth-child(3),
+    #UpdateStudentData > form > div:nth-child(5),
+    #UpdateStudentData > form > div:nth-child(7),
+    #UpdateStudentData > form > div:nth-child(9) {
+        padding-left: 0px;
+    }
+
+    #UpdateParentData > form > div:last-of-type button,
+    #UpdateStudentData > form > div:last-of-type button {
+        padding: 7px 0;
+        font-size: 1rem;
+    }
+
+    #AddGroup form, #AddSpeciality form {
+        flex-wrap: wrap;
+    }
+
+    #AddSpeciality form > div:last-of-type {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #PaymentInfo > div > div:last-of-type,
+    #AbsencesInfo > div > div:last-of-type {
+        max-height: 350px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+    #StudentImage {
+        width: 80%;
+        height: 400px;
+    }
+
+    #StudentsManagement-content, #GroupsManagement-content,
+    #SpecialitiesManagemnt-content, #PaymentManagemnt-content,
+    #AbcenseManagemnt-content, #ExamsManagement-content {
+        grid-column: span 15;
+    }
+
+    #StudentsManagement-content > h1, #GroupsManagement-content > h1,
+    #SpecialitiesManagemnt-content > h1, #PaymentManagemnt-content > h1,
+    #AbcenseManagemnt-content > h1,#ExamsManagement-content > h1 {
+        padding: 10px;
+        font-size: 1.7rem;
+    }
+
+    #StudentsInformation, #ParentInformation, #InsertStudent,
+    #AllInstitutGroups, #AddGroup,
+    #SpecialitiesInfo, #AddSpeciality,
+    #PaymentInfo, #AbsencesInfo,
+    #ExamsInfo, #ResultsInfo, #AddExam, #CalcRedults {
+        padding: 15px 10px;
+    }
+
+    #StudentsInformation h2, #ParentInformation h2, #InsertStudent h2,
+    #AllInstitutGroups h2, #AddGroup h2,
+    #SpecialitiesInfo h2, #AddSpeciality h2,
+    #PaymentInfo h2, #AbsencesInfo h2,
+    #ExamsInfo h2, #ResultsInfo h2, #AddExam h2, #CalcRedults h2 {
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+
+    #StudentsInformation > div {
+        justify-content: space-around;
+    }
+
+    #StudentsInformation > div > div:not(:last-of-type) {
+        width: calc(85% / 2);
+        margin-bottom: 12px;
+    }
+
+    #StudentsInformation > div > div:not(:last-of-type) select, 
+    #InsertStudent form select, #UpdateStudentData > form select,
+    #PaymentInfo > div > div:not(:last-of-type) select,
+    #AbsencesInfo > div > div:nth-child(3) select {
+        font-size: .9rem;
+        padding: 5px;
+    }
+
+    #StudentsInformation > div > div:last-of-type, 
+    #ParentInformation > div > div:last-of-type {
+        max-height: 300px;
+        margin-top: 0px;
+    }
+
+    .no-data {
+        font-size: 1rem;
+        padding-top: 0px;
+    }
+
+    #parentSearching {
+        justify-content: space-evenly;
+    }
+
+    #ParentInformation #parentSearching input {
+        width: 70%;
+        padding: 7px;
+        font-size: .9rem;
+        margin-bottom: 10px;
+    }
+
+    #ParentInformation #parentSearching button, 
+    #InsertStudent form > div:last-of-type button,
+    #addbtn, #updatebtn, #addbtn-GM, #addbtn-SM {
+        padding: 7px;
+        font-size: .7rem;
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+
+    #addbtn-SM, #updatebtn { width: 100%; }
+
+    #InsertStudent, #AddGroup, #AddSpeciality {
+        width: 90%;
+    }
+
+    #PaymentInfo > div > div:not(:last-of-type) {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #InsertStudent form input:not([type="file"]), 
+    #UpdateParentData > form input, 
+    #UpdateStudentData > form input,
+    #AddGroup > form input, 
+    #AddSpeciality > form input {
+        width: 100%;
+        padding: 7px;
+        font-size: .9rem;
+    }
+
+    #InsertStudent form > div:nth-child(8) > div, 
+    #UpdateStudentData > form div:nth-child(8) > div {
+        width: 100%;
+        font-size: 1rem;
+        padding: 7px 0;
+    }
+
+    #StudentsInformation > div > div:last-of-type table, 
+    #ParentInformation > div > div:last-of-type table,
+    #SpecialitiesInfo > div:last-of-type table,
+    #PaymentInfo > div > div:last-of-type table,
+    #AbsencesInfo > div > div:last-of-type table {
+        font-size: .8rem;
+    }
+
+    #PaymentInfo > div > div:last-of-type table th,
+    #PaymentInfo > div > div:last-of-type table td,
+    #AbsencesInfo > div > div:last-of-type table td,
+    #AbsencesInfo > div > div:last-of-type table th {
+        padding: 5px;
+    }
+
+    #UpdateParentData, #UpdateStudentData {
+        width: 90%;
+        max-width: 650px;
+        padding: 15px;
+        height: 350px;
+    }
+
+    #UpdateParentData {
+        height: 285px;
+    }
+
+    #UpdateStudentData > form, #PaymentInfo > div > div:last-of-type {
+        margin-top: 10px;
+    }
+
+    #PaymentInfo > div > div:last-of-type, 
+    #AbsencesInfo > div > div:last-of-type 
+    { max-height: 250px; }
+
+    #UpdateParentData > form > div:last-of-type button, 
+    #UpdateStudentData > form > div:last-of-type button {
+        padding: 7px 0;
+        font-size: 1rem;
+    }
+
+    #PaymentInfo > div, #AbsencesInfo > div, #AbsencesInfo > div {
+        flex-wrap: wrap;
+    }
+
+    #AbsencesInfo > div > div:first-of-type,
+    #AbsencesInfo > div > div:nth-child(2), 
+    #AbsencesInfo > div > div:nth-child(3),
+    #ExamsInfo > div form > div, 
+    #ResultsInfo > div form > div, 
+    #AddExam form > div, #CalcRedults form > div 
+    {
+        width: 90% !important;
+        margin-bottom: 0;
+    }
+
+    #ExamsInfo > div form > div, 
+    #ResultsInfo > div form > div, 
+    #AddExam form > div, #CalcRedults form > div {
+        margin-bottom: 10px !important;
+    }
+
+    .AdminInput {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width:1000px) {
+    #StudentsManagement-content, #GroupsManagement-content,
+    #SpecialitiesManagemnt-content, #PaymentManagemnt-content,
+    #AbcenseManagemnt-content, #ExamsManagement-content {
+        grid-column: span 15;
+    }
+
+    #StudentsManagement-content > h1, #GroupsManagement-content > h1,
+    #SpecialitiesManagemnt-content > h1, #PaymentManagemnt-content > h1,
+    #AbcenseManagemnt-content > h1, #ExamsManagement-content > h1 {
+        padding: 10px;
+    }
+
+    #StudentsInformation > div > div:not(:last-of-type) {
+        max-width: 350px;
+        width: calc(95% / 2);
+    }
+
+    #StudentsInformation, #ParentInformation, #InsertStudent,
+    #AllInstitutGroups, #AddGroup,
+    #SpecialitiesInfo, #AddSpeciality,
+    #PaymentInfo, #AbsencesInfo,
+    #ExamsInfo, #ResultsInfo, #AddExam, #CalcRedults {
+        padding: 15px 10px;
+    }
+
+    #ExamsInfo > div form > div:last-of-type button, 
+    #ResultsInfo > div form > div:last-of-type button {
+        margin-top: 10px !important;
+    }
+
+    #InsertStudent, #AddGroup, #AddSpeciality {
+        width: 90%;
+    }
+
+    #InsertStudent form > div:nth-child(8) > div, 
+    #UpdateStudentData > form div:nth-child(8) > div,
+    #addbtn-SM, #updatebtn {
+        width: 100%;
+    }
+
+    #PaymentInfo > div > div:last-of-type,
+    #AbsencesInfo > div > div:last-of-type 
+    { max-height: 360px; }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    #StudentsManagement-content, #GroupsManagement-content,
+    #SpecialitiesManagemnt-content, #PaymentManagemnt-content,
+    #AbcenseManagemnt-content, #ExamsManagement-content {
+        grid-column: span 11;
+    }
+
+    #InsertStudent, #AddGroup, #AddSpeciality {
+        width: 90%;
+    }
+
+    #addbtn-GM, #addbtn-SM {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1650px) {
+    #StudentsManagement-content, #GroupsManagement-content,
+    #SpecialitiesManagemnt-content, #PaymentManagemnt-content,
+    #AbcenseManagemnt-content, #ExamsManagement-content {
+        grid-column: span 11;
+    }
+
+    #PaymentInfo > div > div:last-of-type,
+    #AbsencesInfo > div > div:last-of-type {
+        max-height: 700px;
+    }
+
+    #AllInstitutGroups > div:last-of-type,
+    #SpecialitiesInfo > div:last-of-type {
+        max-height: 500px;
+    }
+}

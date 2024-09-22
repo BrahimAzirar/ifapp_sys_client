@@ -1,0 +1,79 @@
+#EmailVerification, #AdminLogin {
+    height: 100vh;
+}
+
+#AdminLogin form, #EmailVerification form {
+    width: 500px;
+    height: 400px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 0 9px 1px #00000066;
+    border-radius: 10px;
+}
+
+#EmailVerification form {
+    height: 325px;
+}
+
+#AdminLogin form > div:first-of-type {
+    width: 80%;
+    margin: 0 auto 30px auto;
+}
+
+#EmailVerification form > div:first-of-type {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#AdminLogin form > div:first-of-type img {
+    width: 100%;
+}
+
+#EmailVerification form > div:first-of-type svg {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: rgba(33, 119, 249, 0.612);
+}
+
+#EmailVerification form > div:first-of-type p {
+    font-family: 'JosefinSans-Medium';
+}
+
+#AdminLogin form > div:not(:first-of-type), #EmailVerification form > div:last-of-type {
+    width: 75%;
+    margin: 0 auto 20px auto;
+}
+
+#AdminLogin form > div input, #EmailVerification form > div:last-of-type input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: 'JosefinSans-Regular';
+    border: none;
+    background-color: rgba(222, 222, 222, 0.562);
+    border-radius: 7px;
+}
+
+#EmailVerification form > div:last-of-type input {
+    margin-bottom: 15px;
+}
+
+#AdminLogin form > div button, #EmailVerification form > div:last-of-type button {
+    width: 100%;
+    padding: 7px;
+    font-size: 1.2rem;
+    font-family: 'JosefinSans-Medium';
+    border: none;
+    background-color: rgb(66, 141, 255);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#EmailVerification form > div:last-of-type button svg {
+    margin-left: 5px;
+}
+
+#AdminLogin form > div button:active, #EmailVerification form > div:last-of-type button:active {
+    background-color: rgb(33, 119, 249);
+}
