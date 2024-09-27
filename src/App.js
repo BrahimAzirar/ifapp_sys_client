@@ -18,21 +18,21 @@ import NotFoundPage from './404';
 export default function App() {
   return (
     <Router>
-        <Routes>
-            <Route path='/admin/auth/login' element={<AdminLogin />}/>
-            <Route path='/admin/auth/Emailverfication' element={<EmailVerification />}/>
-            <Route path='/admin/account/StudentsManagement/:username' element={<StudentManagment />}/>
-            <Route path='/admin/account/GroupsManagement/:username' element={<GroupsManagement />}/>
-            <Route path='/admin/account/SpecialitiesManagement/:username' element={<SpecialitiesManagement />}/>
-            <Route path='/admin/account/PaymentManagement/:username' element={<PaymentManagment />}/>
-            <Route path='/admin/account/AbsencesManagement/:username' element={<AbsencesManagement />}/>
-            <Route path='/admin/account/ExamsManagement/:username' element={<ExamsManagement />} />
-            <Route path='/' element={<Home />} />
-            <Route path='/student/account/:username' element={<StudentInfo />} />
-            <Route path='/student/account/absences/:username' element={<Absences />} />
-            <Route path='/student/account/exams/:username' element={<StudentExams />} />
-            <Route path='*' element={<NotFoundPage />}/>
-        </Routes>
+      <Routes>
+        <Route path='/admin/auth/login' element={<AdminLogin />} />
+        <Route path='/admin/auth/Emailverfication' element={<EmailVerification />} />
+        <Route path='/admin/account/StudentsManagement/:username' element={<StudentManagment />} />
+        <Route path='/admin/account/GroupsManagement/:username' element={<GroupsManagement />} />
+        <Route path='/admin/account/SpecialitiesManagement/:username' element={<SpecialitiesManagement />} />
+        <Route path='/admin/account/PaymentManagement/:username' element={<PaymentManagment />} />
+        <Route path='/admin/account/AbsencesManagement/:username' element={<AbsencesManagement />} />
+        <Route path='/admin/account/ExamsManagement/:username' element={<ExamsManagement />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/student/account/:username' element={<StudentInfo />} />
+        <Route path='/student/account/absences/:username' element={<Absences />} />
+        <Route path='/student/account/exams/:username' element={<StudentExams />} />
+        <Route path='*' element={<NotFoundPage />} />
+      </Routes>
     </Router>
   )
 }

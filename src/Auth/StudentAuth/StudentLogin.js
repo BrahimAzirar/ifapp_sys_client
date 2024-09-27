@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import axios from 'axios';
 import { InputEmpty } from '../../ForAll';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function StudentLogin() {
     const StudentForm = useRef();
@@ -40,6 +40,7 @@ export default function StudentLogin() {
                     <button onClick={StudentIsExist}>Log in</button>
                 </div>
             </form>
+            <Link to="/admin/auth/login">admin login</Link>
         </div>
     );
 };
