@@ -40,7 +40,6 @@ export default function StudentLogin() {
                     <button onClick={StudentIsExist}>Log in</button>
                 </div>
             </form>
-            <Link to="/admin/auth/login">admin login</Link>
         </div>
     );
 };

@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useRef } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import AdminLogin from './Auth/AdminAuth/AdminLogin';
 import EmailVerification from './Auth/AdminAuth/EmailVerification';
@@ -16,8 +16,18 @@ import StudentExams from './Student/StudentExams/StudentExams';
 import NotFoundPage from './404';
 
 export default function App() {
+
+  const TargetLink = useRef();
+
+  window.addEventListener('load', () => {
+    if (window.location.pathname == "/admin/auth/login") {
+      TargetLink.current.click();
+    }
+  })
+
   return (
     <Router>
+      <Link to="/admin/auth/login" ref={TargetLink}></Link>
       <Routes>
         <Route path='/admin/auth/login' element={<AdminLogin />} />
         <Route path='/admin/auth/Emailverfication' element={<EmailVerification />} />
