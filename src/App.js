@@ -17,17 +17,8 @@ import NotFoundPage from './404';
 
 export default function App() {
 
-  const TargetLink = useRef();
-
-  window.addEventListener('load', () => {
-    if (window.location.pathname == "/admin/auth/login") {
-      TargetLink.current.click();
-    }
-  })
-
   return (
     <Router>
-      <Link to="/admin/auth/login" ref={TargetLink}></Link>
       <Routes>
         <Route path='/admin/auth/login' element={<AdminLogin />} />
         <Route path='/admin/auth/Emailverfication' element={<EmailVerification />} />
