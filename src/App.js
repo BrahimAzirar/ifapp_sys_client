@@ -17,7 +17,7 @@ import NotFoundPage from './404';
 
 export default function App() {
   return (
-    <Router basename='/'>
+    <Router>
         <Routes>
             <Route path='/admin/auth/login' element={<AdminLogin />}/>
             <Route path='/admin/auth/Emailverfication' element={<EmailVerification />}/>
